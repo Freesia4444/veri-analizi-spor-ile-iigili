@@ -1,4 +1,5 @@
-bu veri setimde boy kilo cinsiyet gibi veriler içeren bir veri seti kullandım.
+
+bu veri setimde boy kilo cinsiyet gibi veriler içeren bir veri seti kullandım. veri seti--> https://www.kaggle.com/datasets/dansbecker/powerlifting-database
 
 bu veri setini yaparken ilk başta eksik veriler oluşturdum , verimin satır ve sutununu analiz ettim ilk 5 verisini, veri türlerimi kolon sayısı gibi şeyleri gözlemledim .
 eksik verilerime baktım ve Her bir değişken için, o değişkendeki eksik değer sayısının toplam kayıt sayısının % kaçı olduğunu buldum.
