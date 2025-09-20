@@ -57,6 +57,6 @@ Projenin Kaggle notebookuna buradan ulaşabilirsiniz:
 
 ## 🤖 Not
 
-Projenin geliştirilmesi sırasında **yapay zekadan yalnızca danışmanlık amaçlı destek alınmıştır**. Tüm analizler, kodlama ve uygulamalar tarafımdan gerçekleştirilmiştir.Zaten projem öğrenme amaçlı yapılmıştır.
+Projenin geliştirilmesi sırasında **yapay zekadan destek alınmıştır**. Zaten projem öğrenme amaçlı  ve kendi eğitimim için yapılmıştır.
 
 ---
