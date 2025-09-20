@@ -1,19 +1,62 @@
-kaggledaki notebookum-->https://www.kaggle.com/code/sudenazekerci/global-ai-hub-veri-analizi-projem#en-az-bir-tane-eksik-olanlar.
-bu veri setimde boy kilo cinsiyet gibi veriler içeren bir veri seti kullandım. veri seti--> https://www.kaggle.com/datasets/dansbecker/powerlifting-database
+# Global AI Hub Veri Analizi Projesi
 
-bu veri setini yaparken ilk başta eksik veriler oluşturdum , verimin satır ve sutununu analiz ettim ilk 5 verisini, veri türlerimi kolon sayısı gibi şeyleri gözlemledim .
-eksik verilerime baktım ve Her bir değişken için, o değişkendeki eksik değer sayısının toplam kayıt sayısının % kaçı olduğunu buldum.
-ardından eksik olmayanları ayırt ettim ve sayılarına baktım.
-ardından missinganko kutuphanesini ekledim ve görselleştirdim.
-msno.matrix(), değişkenlerde bulunan eksik değerlerin ilişkili olup olmadığını görsel yolla tespit ettim.
-buradan 1 e yakın olanların ilişki ihtimallerinin yüksek 0 a yakın olanlarınında etkisi olmadığı bilgisini kullanarak gözlemledim,eksik verilerimi sildim.
-doldurma işlemini gerçekleştirmek için veri setimin kopyasını oluşturdum.
-Bir sayısal değişkenin dağılımını görmek için histogram kullandım.
-ilk başta kategorik verilerim yokmuş gibi gözüktü ardından ben de sayısal verilerimi doldurdum ve yine ardından önceki ile doldurma işlemini yaptım.
-mode değeri ile doldurdum WeightClassKg yi.
-kategorik verilere baktım ve division adlıyı inceledim, kategorik değişkenlerin sayısına baktım.
-ordinal değer oluşturdum.
-Ardından veri çerçevesini yükledikten sonra işlemi gerçekleştirdim ve ilk 5 satırı kontrol ettim.
-Bir değişkendeki IQR'a göre aykırı gözlemleri boxplot kullanarak görselleştirdim ve Quantile değerlerin belirlenmesi.IQR değerin belirlenmesi.Alt ve üst sınırların belirlenmesi gibi işlemleri de yaptım, aykırı 
-gözlemleri sildim.
-Ve en son  veri sonuçlarımı tekrar cağırdım.
+Bu proje, [Powerlifting Database](https://www.kaggle.com/datasets/dansbecker/powerlifting-database) veri seti üzerinde veri analizi ve veri temizleme tekniklerini öğrenmek ve uygulamak amacıyla yapılmıştır.  
+
+Projenin Kaggle notebookuna buradan ulaşabilirsiniz:  
+[Global AI Hub Veri Analizi Projem](https://www.kaggle.com/code/sudenazekerci/global-ai-hub-veri-analizi-projem#en-az-bir-tane-eksik-olanlar)
+
+---
+
+## 📊 Proje Adımları
+
+1. **Veri Yükleme ve İnceleme**
+   - Veri setini Kaggle üzerinden yükledim.
+   - Veri setindeki satır, sütun sayısı, veri tipleri ve ilk 5 satır gibi temel özellikleri inceledim.
+
+2. **Eksik Verilerin Analizi**
+   - Eksik değerleri tespit ettim.
+   - Her bir değişken için, eksik değerlerin toplam içindeki yüzdesini hesapladım.
+   - Eksik olmayan verilerin sayısını ve oranlarını ayrı ayrı inceledim.
+
+3. **Eksik Verilerin Görselleştirilmesi**
+   - `missingno` kütüphanesini kullanarak eksik verileri görselleştirdim.
+   - `msno.matrix()` ile değişkenler arasındaki eksik değer ilişkilerini gözlemledim.  
+     1’e yakın olanların ilişkili olma ihtimalinin yüksek, 0’a yakın olanların ise etkisinin düşük olduğunu değerlendirdim.
+
+4. **Eksik Verilerin Doldurulması ve Silinmesi**
+   - Eksik verileri doldurmak için veri setimin kopyasını oluşturdum.
+   - Sayısal değişkenlerde **ortalama (mean)** ile doldurma işlemi yaptım.
+   - `WeightClassKg` gibi kategorik değişkenleri **mode (mod değeri)** ile doldurdum.
+   - İlgisiz eksik verileri sildim.
+
+5. **Kategorik Verilerin İncelenmesi**
+   - `division` gibi kategorik değişkenleri analiz ettim.
+   - Kategorik değişkenlerin sayısını ve dağılımlarını gözlemledim.
+   - Ordinal değerler oluşturarak verileri dönüştürdüm.
+
+6. **Aykırı Değer Analizi**
+   - Aykırı değerleri tespit etmek için **IQR (Interquartile Range)** yöntemini kullandım.
+   - Alt ve üst sınırları belirledim.
+   - **Boxplot** grafikleri ile aykırı değerleri görselleştirdim.
+   - Aykırı değerleri veri setinden çıkardım.
+
+7. **Veri Setinin Son Hali**
+   - Tüm işlemlerden sonra veri setinin son halini gözlemledim ve tekrar çağırdım.
+
+---
+
+## 🛠 Kullanılan Kütüphaneler
+
+- **pandas**
+- **numpy**
+- **matplotlib**
+- **seaborn**
+- **missingno**
+
+---
+
+## 🤖 Not
+
+Projenin geliştirilmesi sırasında **yapay zekadan yalnızca danışmanlık amaçlı destek alınmıştır**. Tüm analizler, kodlama ve uygulamalar tarafımdan gerçekleştirilmiştir.Zaten projem öğrenme amaçlı yapılmıştır.
+
+---
